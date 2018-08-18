@@ -1,0 +1,17 @@
+<%= form_for :session, :html => {class: 'form-signin'}, url: session_path do |form| %>
+
+  <%= form.label :email, :html => {class: 'sr-only' } %>
+  <%= form.text_field :email, type: 'email', :html => {class: 'form-control', placehoder: 'Email address'} %>
+  </br>
+  <%= form.label :password %>
+  <%= form.password_field :password %>
+  </br>
+  <%= form.submit %>
+
+  <div class="other-links">
+    <% if Clearance.configuration.allow_sign_up? %>
+      <%= link_to t(".sign_up"), sign_up_path %>
+    <% end %>
+    <%= link_to t(".forgot_password"), new_password_path %>
+  </div>
+<% end %>
