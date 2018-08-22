@@ -1,3 +1,4 @@
+<%= tinymce %>
 <%= form_with model: @article, local: true do |form| %>
  
   <% if @article.errors.any? %>
@@ -21,7 +22,7 @@
  
   <p>
     <%= form.label :text %><br>
-    <%= form.text_area :text %>
+    <%= form.text_area :text, :class => "tinymce"%>
   </p>
  
   <p>
