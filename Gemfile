@@ -43,6 +43,7 @@ gem 'bootstrap'
 gem 'jquery-rails'
 gem 'simple_form'
 gem 'tinymce-rails'
+gem "paperclip", "~> 6.0.0"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
