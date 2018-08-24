@@ -1,0 +1,32 @@
+<%= tinymce %>
+<%= form_with model: @dreamer, local: true, html: { multipart: true } do |form| %>
+ 
+  <% if @dreamer.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@dreamer.errors.count, "error") %> prohibited
+        this dreamer from being saved:
+      </h2>
+      <ul>
+        <% @dreamer.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+ 
+  <p>
+    <%= form.label :name %><br>
+    <%= form.text_field :name %>
+  </p>
+ 
+  <p>
+    <%= form.label :profile %><br>
+    <%= form.text_area :profile, :class => "tinymce"%>
+  </p>
+ 
+  <p>
+    <%= form.submit %>
+  </p>
+ 
+<% end %>
