@@ -16,22 +16,25 @@
   </head>
 
   <body>
-      <div class="container">
-        <header>
-          <% if signed_in? %>
-            Signed in as: <%= current_user.email %>
-            <%= button_to 'Sign out', sign_out_path, method: :delete %>
+    <div class="container">
+      <header>
+        <% if signed_in? %>
+          Signed in as: <%= current_user.email %>
+          <%= button_to 'Sign out', sign_out_path, method: :delete %>
+        <% end %>
+
+        <div id="flash">
+          <% flash.each do |key, value| %>
+            <div class="flash <%= key %>"><%= value %></div>
           <% end %>
-
-          <div id="flash">
-            <% flash.each do |key, value| %>
-              <div class="flash <%= key %>"><%= value %></div>
-            <% end %>
-          </div>
-        </header>
-
-        <%= yield %>
-
-      </div>
+        </div>
+      </header>
+    </div>
+    
+    <%= yield %>
+    
+  
+    <div class="footer">
+    </div>
   </body>
 </html>

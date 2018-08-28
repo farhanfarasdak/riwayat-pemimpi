@@ -16,3 +16,61 @@ body {
 .navbar-brand {
    font-size: 2.5rem;
 }
+
+.footer {
+   margin-top: 56px;
+   padding-top: 56px;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #e9ecef;
+   text-align: center;
+}
+
+.bridge-for-more {
+	padding-top: 40px;
+	text-align: left;
+	font-family: Futura;
+}
+
+.bridge {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding-top: 40px; 
+	padding-bottom: 40px;
+	background: #e9ecef;
+}
+
+.button-for-more {
+	padding-top: 20px;
+	text-align: center;
+}
+
+.btn-xl {
+	padding-top: 20px;
+	text-align: center;
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 5px;
+  width:50%;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.card-img-right {
+  height: 250px;
+  width: 200px;
+  border-radius: 0 3px 3px 0;
+}
+
+.flex-auto {
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.h-250 { height: 250px; }
+@media (min-width: 768px) {
+  .h-md-250 { height: 250px; }
+}
