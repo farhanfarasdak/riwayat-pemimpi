@@ -13,18 +13,39 @@ body {
   height: 100%;
 }
 
+.jumbotron {
+  background-color: #258EFC;
+  border-radius: 0px !important;
+}
+
+.jumbotron p {
+  color: white;
+}
+
+.jumbotron h2 {
+  color: white;
+}
+
+.navbar {
+  border-radius: 0px;
+}
+
 .navbar-brand {
-   font-size: 2.5rem;
+  font-size: 2.5rem;
+}
+
+.bg-dark {
+  background-color: #258EFC !important;
 }
 
 .footer {
-   margin-top: 56px;
-   padding-top: 56px;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   background-color: #e9ecef;
-   text-align: center;
+  margin-top: 56px;
+  padding-top: 56px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #258EFC;
+  text-align: center;
 }
 
 .bridge-for-more {
@@ -33,12 +54,34 @@ body {
 	font-family: Futura;
 }
 
+.bridge-for-more h1 {
+  color: white;
+}
+
+.bridge-for-more p {
+  color: white;
+}
+
+.bridge .btn-primary {
+    color: #003E7D;
+    background-color: white;
+    border-color: white;
+    border-radius: 0px;
+}
+
+.bridge .btn-primary:hover {
+    color: #258EFC;
+    background-color: white;
+    border-color: white;
+    border-radius: 0px;
+}
+
 .bridge {
 	margin-top: 20px;
 	margin-bottom: 20px;
 	padding-top: 40px; 
 	padding-bottom: 40px;
-	background: #e9ecef;
+	background: #258EFC;
 }
 
 .button-for-more {

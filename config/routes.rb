@@ -12,5 +12,6 @@ Rails.application.routes.draw do
   
   
   root to: 'main#home'
-
+  get '/articles/:id', to: 'articles#show'
+  get '/articles', to: 'articles#list'
 end
